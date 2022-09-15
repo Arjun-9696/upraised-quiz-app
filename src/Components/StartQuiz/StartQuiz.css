@@ -1,0 +1,28 @@
+.start{
+    width: 750px;
+    height: 1624px;
+    text-align:center;
+    
+}
+.vector_bg{
+    width: 291px;
+    height: 70px;
+    margin-top: 40px;
+}
+.quiz_logo{
+        margin-top: 416px;
+        filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.1));
+}
+.start_content>button{
+    width: 630px;
+    height: 120px;
+    background: #FF3B3F;
+    border-radius: 80px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 67px;
+    color: #FFFFFF;
+    margin-top: 50%;
+}

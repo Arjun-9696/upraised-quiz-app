@@ -1,0 +1,19 @@
+.quiz{
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+.radio_label{
+    display: block;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    margin-left: 0;
+    background-color:rgba(184, 183, 183, 0.272);
+    text-align:left;
+}
+.radio_label>input{
+    margin-right: 10px;
+
+}

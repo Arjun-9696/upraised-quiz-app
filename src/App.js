@@ -1,23 +1,68 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
-
+import StartQuiz from './Components/StartQuiz/StartQuiz';
+import Quiz from './Components/Quiz/Quiz';
+import Result from './Components/Result/Result';
+import quizData from './Json/QuizQuestions.json';
+let interval;
 function App() {
+  const [menu, setMenu] = useState('start');
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [answers, setAnswers] = useState([]);
+  const [showModal, setShowModal] = useState(false);
+  const [time, setTime] = useState(0);
+
+  useEffect(() => {
+     if (menu === 'result') {
+       clearTimeout(interval);
+     }
+  }, [menu]);
+
+  const quizStartHandler = () => {
+    setMenu('quiz');
+    setTime(0);
+    interval = setInterval(() => {
+      setTime((prevTime) => prevTime + 1);
+    }, 1000);
+   
+  };
+
+  const resetClickHandler = () => {
+    setCurrentQuestion(0);
+    setAnswers([]);
+    setMenu('start');
+    setTime(0);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {menu === 'start' && <StartQuiz onQuizStart={quizStartHandler} />}
+      {menu === 'quiz' && (
+        <Quiz
+          data={quizData.data[currentQuestion]}
+          onAnswerUpdate={setAnswers}
+          numberOfQuestions={quizData.data.length}
+          currentQuestion={currentQuestion}
+          onSetCurrentQuestion={setCurrentQuestion}
+          onSetMenu={setMenu}
+        />
+      )}
+      {menu === 'result' && (
+        <Result
+          results={answers}
+          data={quizData.data}
+          onReset={resetClickHandler}
+          onAnswersCheck={() => setShowModal(true)}
+          time={time}
+        />
+      )}
+
+      {/* {showModal && (
+        <Modal
+          onClose={() => setShowModal(false)}
+          results={answers}
+          data={quizData.data}
+        />
+      )} */}
     </div>
   );
 }
