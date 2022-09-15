@@ -2,7 +2,6 @@
     width: 750px;
     height: 1624px;
     text-align:center;
-    
 }
 .vector_bg{
     width: 291px;
@@ -10,8 +9,8 @@
     margin-top: 40px;
 }
 .quiz_logo{
-        margin-top: 416px;
-        filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.1));
+    margin-top: 416px;
+    filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.1));
 }
 .start_content>button{
     width: 630px;

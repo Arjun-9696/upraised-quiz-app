@@ -27,6 +27,7 @@
     {
         "id":5,
         "question": "What is the capital of Bosnia and Herzegovina ?",
+        "src":"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
         "choices": ["Mostar", "Sarajevo", "Banja Luka", "Tuzla"],
         "answer": "Sarajevo"
     },

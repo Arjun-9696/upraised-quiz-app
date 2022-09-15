@@ -1,11 +1,12 @@
 html,body,#root{
-  height: 100%;
+  height: auto;
+  margin: 0;
 }
 .App{
   width: 750px;
   height: 1624px;
   align-items: center;
   margin:auto;
-    background: linear-gradient(180deg, rgba(175, 156, 243, 0) 7.92%, #AF9CF3 86.48%);
-    background-blend-mode: multiply;
+  background: linear-gradient(180deg, rgba(175, 156, 243, 0) 7.92%, #AF9CF3 86.48%);
+  background-blend-mode: multiply;
 }

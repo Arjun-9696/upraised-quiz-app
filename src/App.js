@@ -9,13 +9,12 @@ function App() {
   const [menu, setMenu] = useState('start');
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState([]);
-  const [showModal, setShowModal] = useState(false);
   const [time, setTime] = useState(0);
 
   useEffect(() => {
-     if (menu === 'result') {
-       clearTimeout(interval);
-     }
+    if (menu === 'result') {
+      clearTimeout(interval);
+    }
   }, [menu]);
 
   const quizStartHandler = () => {
@@ -24,7 +23,6 @@ function App() {
     interval = setInterval(() => {
       setTime((prevTime) => prevTime + 1);
     }, 1000);
-   
   };
 
   const resetClickHandler = () => {
@@ -51,18 +49,9 @@ function App() {
           results={answers}
           data={quizData.data}
           onReset={resetClickHandler}
-          onAnswersCheck={() => setShowModal(true)}
           time={time}
         />
       )}
-
-      {/* {showModal && (
-        <Modal
-          onClose={() => setShowModal(false)}
-          results={answers}
-          data={quizData.data}
-        />
-      )} */}
     </div>
   );
 }

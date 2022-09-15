@@ -4,6 +4,7 @@ import Logo from "../../Icons/logo.svg"
 import Quiz_Logo from "../../Icons/quiz.svg"
 const StartQuiz = ({onQuizStart}) => {
   return (
+    // Home section 
     <div className="start">
       <div className="logo_div">
         <img className="vector_bg" src={Logo} alt="Logo" />

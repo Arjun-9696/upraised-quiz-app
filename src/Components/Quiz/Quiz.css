@@ -1,19 +1,135 @@
 .quiz{
-    max-width: 400px;
-    width: 100%;
+    position: absolute;
+    width: 750px;
+    height: 1624px;
+    background: #AF9CF3;
+    background-blend-mode: multiply;
     text-align: center;
 }
-.radio_label{
-    display: block;
-    text-align: center;
-    padding: 15px;
-    margin-bottom: 5px;
-    font-size: 20px;
-    margin-left: 0;
-    background-color:rgba(184, 183, 183, 0.272);
-    text-align:left;
+.quiz_content{
+    position: absolute;
+        width: 750px;
+        height: 1390px;
+        top: 234px;
+        background: #FFFFFF;
+        border-radius: 60px 60px 0px 0px;
 }
-.radio_label>input{
-    margin-right: 10px;
+.timer_animation{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 246px;
+    top: 116px;
+    z-index: 1000000;
+    border-radius:50%;
+    background: #FFFFFF;
+}
+.timer{
+    align-content: center;
+    margin:auto;
+    text-align: center;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.current_text{
+    position: absolute;
+        height: 96px;
+        left: 27.2%;
+        right: 27.2%;
+        top: calc(50% - 96px/2);
+        font-family: 'Nunito';
+        font-style: italic;
+        font-weight: 900;
+        font-size: 96px;
+        line-height: 96px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+        gap:10px;
+}
+.text{
+    color:#999999;
+    font-size: 35px;
+    margin-top:30px;
+    
+}
 
+.question_div>h2{
+        width: 670px;
+        height: 168px;
+        left: 40px;
+        margin: auto;
+        margin-top: 168px;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 56px;
+        color: #000000;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+}
+
+.options_div{
+        width: 670px;
+        height:160px;
+        border-radius:20px;
+        background: #F3F4FA;
+        border-radius: 20px;
+        margin:auto;
+        margin-bottom:20px;
+        display: flex;
+        
+}
+
+.radio_label>input {
+    height: 50px;
+    width: 50px;
+    margin-right:50px;
+}
+
+.radio_label{
+    width: 100%;
+    font-size: 40px;
+    text-align: left;
+    padding:50px;
+    margin-left: 5px;
+}
+.radio_label>h2{
+        margin-top: -60px;
+        margin-left:100px;
+        font-size: 35px;
+        line-height: 45px;
+        opacity: 0.8;
+}
+.next_button{
+    position:relative;
+    width: 630px;
+    height: 120px;
+    background: #FF3B3F;
+    border-radius: 80px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 67px;
+    color: #FFFFFF;
+    margin-top: 10%;
+    overflow: visible;
+    position: absolute;
+    top:75%;
+    left:50px;
+}
+.image{
+    padding:10px;
+}
+.control_img{
+    height:500px;
+    overflow:scroll ;
+}
+.control_img::-webkit-scrollbar {
+    display: none;
 }
