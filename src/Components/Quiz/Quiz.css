@@ -81,7 +81,7 @@
     margin:auto;
     margin-bottom:20px;
     display: flex;
-    
+
 }
 
 .radio_label>input {
@@ -103,6 +103,13 @@
     font-size: 35px;
     line-height: 45px;
     opacity: 0.8;
+}
+.options_div:hover{
+    border:4px solid green;
+    transition:0.4s;
+}
+.radio_label>input[checked]{
+    border: 4px solid green;
 }
 .next_button{
     position:relative;
