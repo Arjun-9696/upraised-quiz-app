@@ -8,11 +8,11 @@
 }
 .quiz_content{
     position: absolute;
-        width: 750px;
-        height: 1390px;
-        top: 234px;
-        background: #FFFFFF;
-        border-radius: 60px 60px 0px 0px;
+    width: 750px;
+    height: 1390px;
+    top: 234px;
+    background: #FFFFFF;
+    border-radius: 60px 60px 0px 0px;
 }
 .timer_animation{
     position: absolute;
@@ -33,56 +33,55 @@
 }
 .current_text{
     position: absolute;
-        height: 96px;
-        left: 27.2%;
-        right: 27.2%;
-        top: calc(50% - 96px/2);
-        font-family: 'Nunito';
-        font-style: italic;
-        font-weight: 900;
-        font-size: 96px;
-        line-height: 96px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: #000000;
-        mix-blend-mode: normal;
-        opacity: 0.8;
-        gap:10px;
+    height: 96px;
+    left: 27.2%;
+    right: 27.2%;
+    top: calc(50% - 96px/2);
+    font-family: 'Nunito';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 96px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    gap:10px;
 }
 .text{
     color:#999999;
     font-size: 35px;
     margin-top:30px;
-    
 }
 
 .question_div>h2{
-        width: 670px;
-        height: 168px;
-        left: 40px;
-        margin: auto;
-        margin-top: 168px;
-        font-family: 'Nunito';
-        font-style: normal;
-        font-weight: 900;
-        font-size: 40px;
-        line-height: 56px;
-        color: #000000;
-        mix-blend-mode: normal;
-        opacity: 0.8;
+    width: 670px;
+    height: 168px;
+    left: 40px;
+    margin: auto;
+    margin-top: 168px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 56px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.8;
 }
 
 .options_div{
-        width: 670px;
-        height:160px;
-        border-radius:20px;
-        background: #F3F4FA;
-        border-radius: 20px;
-        margin:auto;
-        margin-bottom:20px;
-        display: flex;
-        
+    width: 670px;
+    height:160px;
+    border-radius:20px;
+    background: #F3F4FA;
+    border-radius: 20px;
+    margin:auto;
+    margin-bottom:20px;
+    display: flex;
+    
 }
 
 .radio_label>input {
@@ -99,11 +98,11 @@
     margin-left: 5px;
 }
 .radio_label>h2{
-        margin-top: -60px;
-        margin-left:100px;
-        font-size: 35px;
-        line-height: 45px;
-        opacity: 0.8;
+    margin-top: -60px;
+    margin-left:100px;
+    font-size: 35px;
+    line-height: 45px;
+    opacity: 0.8;
 }
 .next_button{
     position:relative;

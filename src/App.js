@@ -17,6 +17,7 @@ function App() {
     }
   }, [menu]);
 
+// Quiz starting logic
   const quizStartHandler = () => {
     setMenu('quiz');
     setTime(0);
@@ -25,6 +26,7 @@ function App() {
     }, 1000);
   };
 
+// Restart the Quiz logic
   const resetClickHandler = () => {
     setCurrentQuestion(0);
     setAnswers([]);

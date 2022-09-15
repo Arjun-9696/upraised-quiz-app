@@ -57,7 +57,7 @@ const Quiz = ({
     return () => clearTimeout(timer);
   }, [currentQuestion]);
 
-
+// Countdown CircleTimer function
   const renderTime = () => {
     return (
       <div className="timer_text">
@@ -71,6 +71,7 @@ const Quiz = ({
   return (
     <div className="quiz">
       <img src={Quiz_Bubbles} alt="Quiz Bubbles" />
+      {/* Countdown Circle Timer animation component */}
       <div className="timer_animation">
         <div className="timer">
           <CountdownCircleTimer
@@ -87,11 +88,13 @@ const Quiz = ({
           </CountdownCircleTimer>
         </div>
       </div>
+      {/* Quiz questions and options */}
       <div className="quiz_content">
         <div className="content">
           <div className="question_div">
             <h2>{data.question}</h2>
           </div>
+          {/* If question has image it will show with this condition. */}
           {data.src ? (
             <div className="image">
               <img src={data.src} className="image" height="300px" width="600px" alt="Image" />
