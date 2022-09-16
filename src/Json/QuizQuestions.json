@@ -2,15 +2,16 @@
   "data": [
     {
         "id":1,
-        "question": "What is the capital of Croatia ?",
-        "choices": ["Split", "Osijek", "Zagreb", "Rijeka"],
-        "answer": "Zagreb"
+        "question": "What is the capital of India ?",
+        "src":"https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/2560px-Flag_of_India.svg.png",
+        "choices": ["Split", "Osijek", "New Delhi", "Rijeka"],
+        "answer": "New Delhi"
     },
     {
         "id":2,
-        "question": "What is the capital of Slovenia ?",
-        "choices": ["Celje", "Ljubljana", "Maribor", "Koper"],
-        "answer": "Ljubljana"
+        "question": "What is the capital of Russian ?",
+        "choices": ["Moscow", "Ljubljana", "Maribor", "Koper"],
+        "answer": "Moscow"
     },
     {
         "id":3,
@@ -20,9 +21,9 @@
     },
     {
         "id":4,
-        "question": "What is the capital of Serbia ?",
-        "choices": ["Belgrade", "Novi Sad", "Niš", "Subotica"],
-        "answer": "Belgrade"
+        "question": "What is the capital of USA ?",
+        "choices": ["Belgrade", "Novi Sad", "Niš", "Washington"],
+        "answer": "Washington"
     },
     {
         "id":5,
@@ -33,9 +34,9 @@
     },
     {
         "id":6,
-        "question": "What is the capital of Hungary ?",
-        "choices": ["Zalaegerszeg", "Eger", "Szeged", "Budapest"],
-        "answer": "Budapest"
+        "question": "What is the capital of United Kingdom ?",
+        "choices": ["Zalaegerszeg", "Eger", "London", "Budapest"],
+        "answer": "London"
     },
     {
         "id":7,
@@ -54,6 +55,13 @@
         "question": "What is the capital of Germany ?",
         "choices": ["Wolfsburg", "Munich", "Berlin", "Frankfurt"],
         "answer": "Berlin"
+    },
+    {
+        "id":10,
+        "question": "What is the capital of Australia ?",
+        "choices": ["Wolfsburg", "Canberra", "Berlin", "Frankfurt"],
+        "answer": "Canberra"
+        
     }
   ]
 }
