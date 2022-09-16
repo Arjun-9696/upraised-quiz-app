@@ -13,7 +13,7 @@ const Quiz = ({
   const [selected, setSelected] = useState('');
   const [error, setError] = useState('');
   const radiosWrapper = useRef();
-  const [key,setKey] = useState(0); // for restart the timer when next button clicked. 
+  const [key,setKey] = useState(0); 
 
 // Radio button checked effectiveness
   useEffect(() => {
@@ -44,7 +44,7 @@ const Quiz = ({
     } else {
       onSetMenu('result');
     }
-    setKey((prevKey) => prevKey + 1);
+    setKey((prevKey) => prevKey + 1); // for restart the timer animation when next button clicked.
   };
 
   // Timer effectiveness
