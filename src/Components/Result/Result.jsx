@@ -4,15 +4,19 @@ import Quiz_Bubbles from '../../Icons/quiz_bubbles.svg';
 import Result_Ani from '../../Icons/result_ani.svg';
 import './Result.css';
 import Speedometer from 'react-d3-speedometer';
+
 const Result = ({ results, data, onReset, time }) => {
   const [correctAnswers, setCorrectAnswers] = useState(0);
   const [endTime, setEndTime] = useState('');
+
+  // Showing the time taken to finish the quiz effect.
   useEffect(() => {
     if (time) {
       setEndTime(formatTime(time));
     }
   }, []);
 
+  // Showing the Answers effect.
   useEffect(() => {
     let correct = 0;
     results.forEach((result, index) => {
@@ -21,8 +25,8 @@ const Result = ({ results, data, onReset, time }) => {
       }
     });
     setCorrectAnswers(correct);
-    // eslint-disable-next-line
   }, []);
+
   return (
     <div className="result">
       <img src={Quiz_Bubbles} alt="Quiz Bubbles" />
@@ -30,9 +34,9 @@ const Result = ({ results, data, onReset, time }) => {
         <div className="content">
           <h3>Your Result</h3>
           <div className="result_meter_div">
+            {/* Result meter section */}
             <div className="meter_div">
               <Speedometer
-                // className="speedometer"
                 width={480}
                 height={240}
                 minValue={0}
@@ -55,16 +59,26 @@ const Result = ({ results, data, onReset, time }) => {
               </div>
             </div>
           </div>
-          {/* <div>
-            <p>
-              {correctAnswers} of {data.length}
-            </p>
-            <p>{Math.floor((correctAnswers / data.length) * 100)}%</p>
-            <p>Your total time : {endTime}</p>
-            <button className="reset" onClick={onReset}>
-              Restart Quiz
-            </button>
-          </div> */}
+          {/* Result Details section */}
+          <div className="correct">
+            {/* <img src={Correct_Dot} alt="Correct Dot" /> */}
+            <div className="correct_dot"></div>
+            <h5>{correctAnswers}</h5>
+            <h6>Correct</h6>
+          </div>
+          <div className="incorrect">
+            <div className="incorrect_dot"></div>
+            <h5>{data.length - correctAnswers}</h5>
+            <h6>Incorrect</h6>
+          </div>
+          <div className="timeTaken">
+            <div className="timeTaken_dot"></div>
+            <h5> {endTime}</h5>
+            <h6>Your total time</h6>
+          </div>
+          <button className="reset" onClick={onReset}>
+            Start Again
+          </button>
         </div>
       </div>
     </div>

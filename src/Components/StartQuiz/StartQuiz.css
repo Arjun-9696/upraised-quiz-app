@@ -24,4 +24,6 @@
     line-height: 67px;
     color: #FFFFFF;
     margin-top: 50%;
+    border: none;
+    cursor: pointer;
 }

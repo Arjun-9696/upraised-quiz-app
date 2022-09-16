@@ -1,4 +1,4 @@
-// This function helps to covert the machine time to human readable format 
+// This function helps to covert the machine time to human readable format
 const formatTime = (time) => {
   if (time < 60) {
     return time < 10 ? `0${time}s` : `${time}s`;

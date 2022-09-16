@@ -81,7 +81,6 @@
     margin:auto;
     margin-bottom:20px;
     display: flex;
-
 }
 
 .radio_label>input {
@@ -128,6 +127,12 @@
     position: absolute;
     top:75%;
     left:50px;
+    border: none;
+    cursor: pointer;
+}
+.next_button>img{
+    margin-left: 30%;
+    margin-top:15px;
 }
 .image{
     padding:10px;

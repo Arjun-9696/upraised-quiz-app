@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { CountdownCircleTimer } from 'react-countdown-circle-timer';
 import './Quiz.css';
 import Quiz_Bubbles from '../../Icons/quiz_bubbles.svg';
+import Next_Arrow from '../../Icons/next.svg';
 const Quiz = ({
   data,
   onAnswerUpdate,
@@ -13,9 +14,9 @@ const Quiz = ({
   const [selected, setSelected] = useState('');
   const [error, setError] = useState('');
   const radiosWrapper = useRef();
-  const [key,setKey] = useState(0); 
+  const [key, setKey] = useState(0);
 
-// Radio button checked effectiveness
+  // Radio button checked effectiveness
   useEffect(() => {
     const findCheckedInput =
       radiosWrapper.current.querySelector('input:checked');
@@ -24,7 +25,7 @@ const Quiz = ({
     }
   }, [data]);
 
-// Selection the options by user
+  // Selection the options by user
   const changeHandler = (e) => {
     setSelected(e.target.value);
     if (error) {
@@ -32,7 +33,7 @@ const Quiz = ({
     }
   };
 
-// Next Question function when questions end it will render the Result.
+  // Next Question function when questions end it will render the Result.
   const nextClickHandler = (e) => {
     onAnswerUpdate((prevState) => [
       ...prevState,
@@ -59,7 +60,7 @@ const Quiz = ({
     return () => clearTimeout(timer);
   }, [currentQuestion]);
 
-// Countdown CircleTimer function
+  // Countdown CircleTimer function
   const renderTime = () => {
     return (
       <div className="timer_text">
@@ -131,7 +132,7 @@ const Quiz = ({
             ))}
           </div>
           <button className="next_button" onClick={nextClickHandler}>
-            Next
+            <img src={Next_Arrow} alt="" />
           </button>
         </div>
       </div>

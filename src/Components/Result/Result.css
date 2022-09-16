@@ -6,7 +6,7 @@
     background-blend-mode: multiply;
     text-align: center;
 }
-
+/* Your Result section */
 .result_content {
     position: absolute;
     width: 750px;
@@ -15,57 +15,135 @@
     background: #FFFFFF;
     border-radius: 60px 60px 0px 0px;
 }
-
 .content>h3 {
-        width: 757px;
-        height: 59px;
-        font-family: 'Nunito';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 56px;
-        line-height: 56px;
-        text-align: center;
-        color: #000000;
-        mix-blend-mode: normal;
-        opacity: 0.8;
+    width: 757px;
+    height: 59px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 56px;
+    text-align: center;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.8;
 }
 .result_meter_div{
-        width: 480px;
-        height: 440px;
-        margin-left: 135px;
+    width: 480px;
+    height: 440px;
+    margin-left: 135px;
 }
 .round{
     position: absolute;
-        width: 320px;
-        height: 320px;
-        left: 215px;
-        top:250px;
-        background: #FFFFFF;
-        border-radius: 50%;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 320px;
+    height: 320px;
+    left: 215px;
+    top:250px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .round>div{
-        position: absolute;
-        width: 280px;
-        height: 280px;border-radius: 50%;
-        left: 20px;
-        top: 20px;
-        border: 2px solid #EBEDF5;
+    position: absolute;
+    width: 280px;
+    height: 280px;border-radius: 50%;
+    left: 20px;
+    top: 20px;
+    border: 2px solid #EBEDF5;
 }
 .round>div>h1{
-        font-family: 'Nunito';
-        font-style: normal;
-        font-weight: 900;
-        font-size: 64px;
-        line-height: 180px;
-        align-items: center;
-        color: #1E1E28;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 180px;
+    align-items: center;
+    color: #1E1E28;
 }
 .meter_div>img{
     position: absolute;
-        width: 412px;
-        height: 345px;
-        left: 170px;
-        top: 185px;
-        opacity: 0.7;
+    width: 412px;
+    height: 345px;
+    left: 170px;
+    top: 185px;
+    opacity: 0.7;
+}
+/* Result details CSS  */
+.correct,.incorrect,.timeTaken{
+    display: flex;
+    width:670px;
+    height:130px;
+    border-radius: 20px;
+    margin:auto;
+    background: #44b77c32;
+    border-radius: 20px;
+}
+.correct_dot,.incorrect_dot,.timeTaken_dot{
+    width:32px;
+    height:32px;
+    background: #44B77B;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 49px;
+    bottom: 37.69%;
+}
+.incorrect_dot{
+    background: #FF3B3F;
+}
+.timeTaken_dot{
+    background: #9e84ff;
+}
+.correct>h5,.incorrect>h5,.timeTaken>h5{
+    margin-left: 25px;
+    margin-top:53px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 32px;
+    line-height: 28px;
+    color: #000000;
+}
+.correct>h6,.incorrect>h6,.timeTaken>h6{
+    font-family:"Source Sans Pro";
+    font-style: normal;
+    font-weight:bold;
+    font-size: 32px;
+    line-height: 34px;
+    margin-left: 20px;
+    margin-top: 50px;
+    color: #000000;
+    opacity: 0.5;
+}
+.incorrect{
+    width: 670px;
+    height: 130px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top:40px;
+    background: #FF3B3F32;
+    mix-blend-mode: normal;
+    border-radius: 20px;
+}
+.timeTaken{
+    width: 670px;
+    height: 130px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 40px;
+    background: #AF9CF332;
+    mix-blend-mode: normal;
+    border-radius: 20px;
+}
+.reset{
+    width: 670px;
+    height: 120px;
+    cursor: pointer;
+    background: #FF3B3F;
+    border-radius: 80px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 67px;
+    color: #FFFFFF;
+    border:none;
+    margin-top: 10%;
 }
