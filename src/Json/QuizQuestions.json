@@ -40,24 +40,18 @@
     },
     {
         "id":7,
-        "question": "What is the capital of Slovakia ?",
-        "choices": ["Košice", "Nitra", "Bratislava", "Poprad"],
-        "answer": "Bratislava"
-    },
-    {
-        "id":8,
         "question": "What is the capital of Romania ?",
         "choices": ["Bucharest", "Craiova", "Constanta", "Braila"],
         "answer": "Bucharest"
     },
     {
-        "id":9,
+        "id":8,
         "question": "What is the capital of Germany ?",
         "choices": ["Wolfsburg", "Munich", "Berlin", "Frankfurt"],
         "answer": "Berlin"
     },
     {
-        "id":10,
+        "id":9,
         "question": "What is the capital of Australia ?",
         "choices": ["Wolfsburg", "Canberra", "Berlin", "Frankfurt"],
         "answer": "Canberra"
