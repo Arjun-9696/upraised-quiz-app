@@ -13,6 +13,7 @@ const Quiz = ({
   const [selected, setSelected] = useState('');
   const [error, setError] = useState('');
   const radiosWrapper = useRef();
+  const [key,setKey] = useState(0); // for restart the timer when next button clicked. 
 
 // Radio button checked effectiveness
   useEffect(() => {
@@ -43,6 +44,7 @@ const Quiz = ({
     } else {
       onSetMenu('result');
     }
+    setKey((prevKey) => prevKey + 1);
   };
 
   // Timer effectiveness
@@ -75,6 +77,7 @@ const Quiz = ({
       <div className="timer_animation">
         <div className="timer">
           <CountdownCircleTimer
+            key={key}
             size={218}
             strokeWidth={16}
             isPlaying
@@ -97,10 +100,21 @@ const Quiz = ({
           {/* If question has image it will show with this condition. */}
           {data.src ? (
             <div className="image">
-              <img src={data.src} className="image" height="300px" width="600px" alt="Image" />
+              <img
+                src={data.src}
+                className="image"
+                height="300px"
+                width="600px"
+                alt="Image"
+              />
             </div>
-          ) : (<></>)}
-          <div className={data.src ? 'control_img' : 'control'} ref={radiosWrapper}>
+          ) : (
+            <></>
+          )}
+          <div
+            className={data.src ? 'control_img' : 'control'}
+            ref={radiosWrapper}
+          >
             {data.choices.map((choice, i) => (
               <div className="options_div">
                 <label className="radio_label" key={i}>
